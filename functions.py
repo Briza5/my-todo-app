@@ -4,7 +4,7 @@ def get_todos(filepath=FILEPATH):  # otevře soubor pro čtení a načte obsah s
     """ otevře soubor pro čtení a načte obsah souboru tedy
       todo-list..
     """
-    with open(filepath, 'r', encoding='latin-1') as file_local:
+    with open(filepath, 'r', encoding='utf-8') as file_local:
             todos_local = file_local.readlines()
     return todos_local
 

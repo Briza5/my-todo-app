@@ -1,0 +1,4 @@
+[server]
+environment = [
+    "PYTHONIOENCODING=utf-8"
+]
