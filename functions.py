@@ -4,13 +4,13 @@ def get_todos(filepath=FILEPATH):  # otevře soubor pro čtení a načte obsah s
     """ otevře soubor pro čtení a načte obsah souboru tedy
       todo-list..
     """
-    with open(filepath, 'r', encoding="utf-8") as file_local:
+    with open(filepath, 'r', encoding='utf-8') as file_local:
             todos_local = file_local.readlines()
     return todos_local
 
 def write_todos(todos_arg,filepath=FILEPATH):
     """ zapisuje todo item list do souboru """
-    with open(filepath, 'w', encoding="utf-8") as file:
+    with open(filepath, 'w', encoding='utf-8') as file:
             todos = file.writelines(todos_arg)
 
 
